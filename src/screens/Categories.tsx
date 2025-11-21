@@ -133,8 +133,7 @@ export default function CategoriesScreen(){
                 </TouchableOpacity>
                 {currentUser?.role === "admin" && (
                     <TouchableOpacity style={[categoriesSyles.actionButton,categoriesSyles.deleteButton]}
-                    onPress={() => handleDelete(item)}
-                    >
+                    onPress={() => handleDelete(item)}>
                         <Text style={[categoriesSyles.actionButtonText, categoriesSyles.deleteButtonText]}>
                             Eliminar
                         </Text>
